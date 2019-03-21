@@ -1,0 +1,14 @@
+<view class="userpage">
+  <button bindtap="login" hidden="{{islogin}}">点击扫一扫登录{{islogin}}</button>
+  <view  hidden="{{!islogin}}">
+  <navigator url="../../pages/user/user?id={{userdata.loginname}}">
+    <view class="userinfor">
+      用户名:{{userdata.loginname}}
+      <view>
+        <image src="{{userdata.avatar_url}}" class="userimg"></image>
+      </view>
+    </view>
+  </navigator>
+  <button bindtap='out'>退出登陆</button>
+  </view>
+</view>

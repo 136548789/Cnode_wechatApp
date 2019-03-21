@@ -1,0 +1,50 @@
+textarea{
+  margin-top:10px;
+  height:600rpx;
+  width: 100%;
+  border-bottom: 1px solid #999;
+}
+input{
+  padding-bottom:10px;
+  border-bottom: 1px solid #999;
+}
+.addimg{
+  margin-top: 2%;
+  margin-left: 2%;
+  width: 150rpx;
+  height: 150rpx;
+  color: #ddd;
+  font-size: 144rpx;
+  line-height: 95%;
+  text-align: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+.imglist image {
+  width: 160rpx;
+  height: 160rpx;
+  
+}
+.delimg{
+  position: absolute;
+  top: -11rpx;
+  right: -11rpx;
+  color: #fff;
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  z-index: 2;
+  line-height: 35rpx;
+  text-align: center;
+  background-color: #f00;
+}
+.imglist{
+  float:left;
+  margin: 10px;
+  margin-left: 0;
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+}

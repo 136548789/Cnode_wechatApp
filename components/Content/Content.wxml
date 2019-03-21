@@ -1,0 +1,35 @@
+<view class="Topnavbar">
+  <view class="navbar">
+      <button bindtap="changetap" data-current="all">
+        全部
+      </button>
+      <button bindtap="changetap" data-current="share">
+        分享
+      </button>
+      <button bindtap="changetap" data-current="good">
+        精华
+      </button>
+      <button bindtap="changetap" data-current="ask">
+        问答
+      </button>
+      <button bindtap="changetap" data-current="job">
+        招聘
+      </button>
+      <button bindtap="changetap" data-current="dev">
+        测试
+      </button>
+  </view>
+</view>
+<scroll-view class="content" enable-back-to-top="true" style="height:{{scrollH}}px" bindscrolltolower="changepage" scroll-y="true" bindscroll="scrollchange" scroll-top="{{top}}">
+  <view wx:for="{{topic_list}}" wx:key="index" wx:for-item="item" class="cell">
+    <view class="topic_cell">
+      <navigator class="author"  url="../../pages/user/user?id={{item.author.loginname}}">
+        <view><image src="{{item.author.avatar_url}}" class="authorimg"></image></view>
+        <view>{{item.author.loginname}}</view>
+      </navigator>
+      <navigator class="topictitle" url="../../pages/topic/topic?id={{item.id}}">{{item.title}}</navigator>
+      <view class="topictab">{{item.tab}}</view>
+    </view>
+  </view>
+</scroll-view>
+<image src='../../icon/to_top.png' hidden='{{topbuttom}}' class='goTop' bindtap="goTop"></image>

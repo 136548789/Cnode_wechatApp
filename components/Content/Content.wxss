@@ -1,0 +1,62 @@
+.Topnavbar{
+  background-color: #F6F6F6;
+  width:750rpx;
+}
+scroll-view{
+  height: 100%;
+}
+button{
+  display: inline-block;
+  font-size: 30rpx;
+  width:16.66%;
+  text-align: center;
+  font-style: FangSong;
+  height: 100%;
+}
+button::after {
+  border: none;
+}
+button:hover{
+  background-color: greenyellow;
+}
+.content{
+  width:100%;
+  background-color:white;
+}
+.topictab{
+  background-color:aqua;
+  width:120rpx;
+  float: right;
+  border-radius:50rpx;
+  text-align: center;
+}
+.cell{
+  height:300rpx;
+  background-color:white;
+  border-bottom: 1px solid rgb(8, 8, 8);
+}
+.topictitle{
+  height:140rpx;
+  overflow: hidden;
+  margin-bottom:15rpx;
+  font-size: 50rpx;
+  display:block;
+  width:750rpx;
+}
+.goTop{
+  height: 80rpx;
+  width: 80rpx;
+  position: fixed;
+  bottom: 50rpx;
+  background: rgba(0,0,0,.3);
+  right: 30rpx;
+  border-radius: 70%;
+}
+.authorimg{
+  height:80rpx;
+  width:80rpx;
+  display:block;
+  float:left;
+}
+
+

@@ -1,0 +1,31 @@
+<view class="user">
+  <view class="username">
+    <view>{{userdata.loginname}}</view>
+    <image src="{{userdata.avatar_url}}"></image>
+    <view>score={{userdata.score}}</view>
+  </view>
+  <text>最近发帖</text>
+  <view class="writepost">
+    <view wx:for="{{userdata.recent_topics}}" wx:key="index" wx:for-item="item" class="postcell  cell">
+      <navigator url="../../pages/user/user?id={{item.author.loginname}}">
+        <image src="{{item.author.avatar_url}}"></image>
+        <view>{{item.author.loginname}}</view>
+      </navigator>
+      <navigator url="../../pages/topic/topic?id={{item.id}}">
+        <view class="title">{{item.title}}</view>
+      </navigator>
+    </view>
+  </view>
+  <text>最近回复</text>
+  <view class="replypost">
+    <view wx:for="{{userdata.recent_replies}}" wx:key="index" wx:for-item="item" class="replycell  cell">
+      <navigator url="../../pages/user/user?id={{item.author.loginname}}">
+        <image src="{{item.author.avatar_url}}"></image>
+        <view>{{item.author.loginname}}</view>
+      </navigator>
+      <navigator url="../../pages/topic/topic?id={{item.id}}">
+        <view class="title">{{item.title}}</view>
+      </navigator>
+    </view>
+  </view>
+</view>

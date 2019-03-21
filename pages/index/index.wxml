@@ -1,0 +1,4 @@
+<view>
+<Content/>
+<image src='../../icon/addPost.png' hidden='{{!islogin}}' class='goPost' bindtap="goPost"></image>
+</view>

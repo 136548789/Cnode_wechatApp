@@ -1,0 +1,33 @@
+<view class="title">
+  <navigator class="author" url="../../pages/user/user?id={{author.loginname}}">
+    <view>
+      <image src="{{author.avatar_url}}" class="authorimg"></image>
+    </view>
+    <view>{{author.loginname}}</view>
+  </navigator>
+  <view>{{title}}</view>
+</view>
+<rich-text nodes="{{topic_content}}" class="content"></rich-text>
+<view class="replycell" wx:for="{{reply}}" wx:key="index" wx:for-item="item">
+  <navigator class="author" url="../../pages/user/user?id={{item.author.loginname}}">
+    <view>
+      <image src="{{item.author.avatar_url}}" class="authorimg"></image>
+    </view>
+    <view>{{item.author.loginname}}</view>
+  </navigator>
+  <view>
+    <rich-text class="replycontent" nodes="{{item.content}}">
+    </rich-text>
+    <button  class="replyimg" hidden="{{!islogin}}" bindtap='toreply' data-index="{{item.author.loginname}}">
+      <image src="../../icon/reply.png" class="replyimg"></image>
+    </button>
+  </view>
+</view>
+<view class='pocket_input'  hidden="{{!islogin}}">
+  <input id="replytext" class="replytext" value='{{replyname}}' 
+  placeholder="在此输入" bindinput='getInput' 
+  focus="{{focus}}" fixed="{{true}}" 
+  maxlength="1000" show-confirm-bar="" 
+  name="replytext" bindinput='bindinput'></input>
+  <button class="replybutton" bindtap='postreply'>回复</button>
+</view>

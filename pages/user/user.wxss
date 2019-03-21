@@ -1,0 +1,39 @@
+.username image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.username {
+  border-bottom: 1px solid black;
+}
+
+.writepost image, .replypost image {
+  height: 80rpx;
+  width: 80rpx;
+  display: block;
+  float: left;
+}
+
+.writepost, .replypost {
+  border-bottom: 1px solid black;
+}
+
+.cell {
+  height: 300rpx;
+  background-color: white;
+  border-top: 1px solid rgb(8, 8, 8);
+}
+
+.title {
+  height: 140rpx;
+  overflow: hidden;
+  margin-bottom: 15rpx;
+  font-size: 50rpx;
+  display: block;
+  width: 750rpx;
+}
+
+text{
+  font-size: 80rpx;
+  font-weight: blod;
+}

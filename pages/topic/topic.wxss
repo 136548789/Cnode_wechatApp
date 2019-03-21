@@ -1,0 +1,50 @@
+.title {
+  border-bottom: 1px solid #999;
+  margin-bottom: 10rpx;
+}
+
+.authorimg {
+  height: 80rpx;
+  width: 80rpx;
+  display: block;
+  float: left;
+}
+
+.content {
+  border-bottom: 1px solid #999;
+  margin-bottom: 20rpx;
+}
+
+.replycell {
+  border-top: 1px solid #999;
+  padding-bottom: 100rpx;
+}
+
+.author {
+  margin-bottom: 50rpx;
+}
+.pocket_input{
+  background-color: #FBFBFB;
+  width: 750rpx;
+  border: 1px solid black;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+}
+.replytext{
+  width:80%;
+  float:left;
+}
+.replybutton{
+  background: #999;
+  margin-bottom: 50rpx;
+  width:20%;
+  border-radius: 20px;
+}
+.replyimg{
+  float:right;
+  width: 20rpx;
+  height: 40rpx;
+}
+
+

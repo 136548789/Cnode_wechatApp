@@ -1,0 +1,20 @@
+<view class='addpost'>
+  <view class='title'>
+    <input placeholder='请输入标题,限50字' maxlength="50" bindinput="titlechange"></input>
+  </view>
+  <view class='content'>
+    <textarea placeholder='请输入帖子内容' maxlength="5000" bindinput="contentchange"></textarea>
+  </view>
+  <view class='image'>
+    <view class='showimg'>
+      <view wx:for="{{imglist}}" wx-key="index" class="imglist" wx:for-item="item">
+        <image src="{{item.path}}" mode="aspectFill"></image>
+        <text class='delimg' bindtap='deleteimg' data-index="index">×</text>
+      </view>
+      <view class='addimg' bindtap="addimg">
+        <text>+</text>
+      </view>
+    </view>
+  </view>
+  <button bindtap="addpost">发帖</button>
+</view>
